@@ -8,6 +8,10 @@ controls: false
 # WebVR
 ## Getting started with Virtual Reality for the web
 
+<div class="border"></div>
+
+### JOSEPHS<sup>®</sup>, Nürnberg Web Week 2017
+
 <div class="contact">
   <p>Peter O'Shaughnessy</p>
   <p>[@poshaughnessy](https://twitter.com/poshaughnessy)</p>
@@ -58,6 +62,12 @@ controls: false
 
 [metaverse.samsunginter.net](https://metaverse.samsunginter.net/)
 
+-- iframe iframe-with-caption
+
+<iframe width="90%" height="90%" src="https://www.youtube.com/embed/jMcLQoMR78w" frameborder="0" allowfullscreen></iframe>
+
+<div class="caption">[youtu.be/jMcLQoMR78w](https://youtu.be/jMcLQoMR78w)</div>
+
 --
 
 ## WebVR provides...
@@ -67,7 +77,7 @@ controls: false
 * Sensor integration, e.g. orientation
 * Rendering for different hardware
 
--- 
+--
 
 ### Stereoscopic
 
@@ -83,7 +93,7 @@ controls: false
 
 ### Browsers
 
-![Chrome for Android](images/chrome-android.png) ![Chromium](images/chromium.png) ![Firefox Nightly](images/firefox-nightly.png) ![Servo](images/servo.png) ![Samsung Internet](images/sbrowser5.0.png) ![Edge](images/edge.png) ![Carmel](images/carmel.png) 
+![Chrome for Android](images/chrome-android.png) ![Chromium](images/chromium.png) ![Firefox Nightly](images/firefox-nightly.png) ![Servo](images/servo.png) ![Samsung Internet](images/sbrowser5.0.png) ![Edge](images/edge.png) ![Oculus Browser](images/oculus.png) 
 
 [webvr.rocks](https://webvr.rocks/)
 
@@ -91,6 +101,12 @@ controls: false
 -- webvr-info valign-bottom
 
 <div class="credit">[webvr.info](https://webvr.info/)</div>
+
+--
+
+![WebVR polyfill](images/webvr-polyfill.png)
+
+* Mobile: uses DeviceMotion API & presumes Cardboard type viewer
 
 -- 
 
@@ -271,6 +287,7 @@ effect.render( scene, camera );
 
 <iframe src="demos/aframe-basic/index.html" scrolling="no" width="100%" height="100%"></iframe>
 
+<h3 class="over-iframe">[demo link here](#)</h3>
 
 -- llama-carousel valign-top
 
@@ -388,6 +405,10 @@ new AFRAME.TWEEN.Tween(el.object3D.rotation)
 
 [webvr.playcanvas.com](https://webvr.playcanvas.com)
 
+-- renault valign-bottom extra-vignette-1
+
+[kadjar-vr.littleworkshop.fr](https://kadjar-vr.littleworkshop.fr/)
+
 -- pva bg-fade fade-less
 
 # Progressive VR Apps
@@ -450,7 +471,6 @@ new AFRAME.TWEEN.Tween(el.object3D.rotation)
 
 ## Where next?
 
-* Touchpad / controllers
 * Physics / gaming engines
 * Web Audio
 

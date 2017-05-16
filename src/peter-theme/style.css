@@ -567,6 +567,11 @@ pre .xml .cdata {
   max-height: calc(100vh - 8em);
 }
 
+.iframe-with-caption iframe {
+  margin-top: 1em;
+  max-height: calc(100vh - 4em);
+}
+
 .slide .pun {
   color: #c4c3f5;
   font-size: 1em;
@@ -653,20 +658,25 @@ h2 + .quote {
   flex-wrap: wrap;
 }
 
-#slide-1 h2 {
-  font-size: 1.5em;
+#slide-1 .border {
+  width: 8em;
+  height: 1em;
+  border-top: 2px solid #ddd;
+  margin: 1em auto 0 auto;
 }
 
-#slide-1 h2.emoji {
-  font-size: 3em;
+#slide-1 h2 {
+  font-style: italic;
 }
 
 #slide-1 h3 {
-  font-size: 1.2em;
+  margin-top: 1em;
+  font-size: 1em;
+  color: #ddd;
 }
 
 #slide-1 .contact {
-  margin-top: 8em;
+  margin-top: 4em;
 }
 
 .slide.extra-vignette-1:before {
@@ -678,7 +688,7 @@ h2 + .quote {
 }
 
 .slide.intro:before {
-  background-image: url(images/samsung-devrel-team3.jpg);
+  background-image: url(images/vr-classroom.jpg);
 }
 
 .slide.thanks:before {
@@ -715,6 +725,10 @@ h2 + .quote {
 
 .slide.playcanvas-lab:before {
   background-image: url(images/playcanvas-webvr-lab.png);
+}
+
+.slide.renault:before {
+  background-image: url(images/renault-webvr.jpg);
 }
 
 .slide.pva:before {
