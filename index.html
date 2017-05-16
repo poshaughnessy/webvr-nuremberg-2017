@@ -575,6 +575,11 @@ pre .xml .cdata {
   max-height: calc(100vh - 8em);
 }
 
+.iframe-with-caption iframe {
+  margin-top: 1em;
+  max-height: calc(100vh - 4em);
+}
+
 .slide .pun {
   color: #c4c3f5;
   font-size: 1em;
@@ -661,20 +666,25 @@ h2 + .quote {
   flex-wrap: wrap;
 }
 
-#slide-1 h2 {
-  font-size: 1.5em;
+#slide-1 .border {
+  width: 8em;
+  height: 1em;
+  border-top: 2px solid #ddd;
+  margin: 1em auto 0 auto;
 }
 
-#slide-1 h2.emoji {
-  font-size: 3em;
+#slide-1 h2 {
+  font-style: italic;
 }
 
 #slide-1 h3 {
-  font-size: 1.2em;
+  margin-top: 1em;
+  font-size: 1em;
+  color: #ddd;
 }
 
 #slide-1 .contact {
-  margin-top: 8em;
+  margin-top: 4em;
 }
 
 .slide.extra-vignette-1:before {
@@ -686,7 +696,7 @@ h2 + .quote {
 }
 
 .slide.intro:before {
-  background-image: url(images/samsung-devrel-team3.jpg);
+  background-image: url(images/vr-classroom.jpg);
 }
 
 .slide.thanks:before {
@@ -723,6 +733,10 @@ h2 + .quote {
 
 .slide.playcanvas-lab:before {
   background-image: url(images/playcanvas-webvr-lab.png);
+}
+
+.slide.renault:before {
+  background-image: url(images/renault-webvr.jpg);
 }
 
 .slide.pva:before {
@@ -869,6 +883,9 @@ h2 + .quote {
   <div class="slide  bg-fade-grey intro" id="slide-1">
     <section class="slide-content"><h1 id="webvr">WebVR</h1>
 <h2 id="getting-started-with-virtual-reality-for-the-web">Getting started with Virtual Reality for the web</h2>
+<div class="border"></div>
+
+<h3 id="josephs-sup-sup-n-rnberg-web-week-2017">JOSEPHS<sup>®</sup>, Nürnberg Web Week 2017</h3>
 <div class="contact">
   <p>Peter O&#39;Shaughnessy</p>
   <p><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></p>
@@ -912,7 +929,12 @@ h2 + .quote {
     <section class="slide-content"><p><a href="https://metaverse.samsunginter.net/">metaverse.samsunginter.net</a></p>
 </section>
   </div>
-  <div class="slide hidden" id="slide-10">
+  <div class="slide hidden  iframe iframe-with-caption" id="slide-10">
+    <section class="slide-content"><iframe width="90%" height="90%" src="https://www.youtube.com/embed/jMcLQoMR78w" frameborder="0" allowfullscreen></iframe>
+
+<div class="caption"><a href="https://youtu.be/jMcLQoMR78w">youtu.be/jMcLQoMR78w</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-11">
     <section class="slide-content"><h2 id="webvr-provides-">WebVR provides...</h2>
 <ul>
 <li>Headset discovery</li>
@@ -922,35 +944,42 @@ h2 + .quote {
 </ul>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-11">
+  <div class="slide hidden" id="slide-12">
     <section class="slide-content"><h3 id="stereoscopic">Stereoscopic</h3>
 <p><img src="images/oculus-stereo-normal.jpg" alt="Stereoscopic" style="max-width:80%; max-height: 70vh"/></p>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-12">
+  <div class="slide hidden  " id="slide-13">
     <section class="slide-content"><h3 id="browser-handles-distortion">Browser handles distortion</h3>
 <p><img src="images/oculus-stereo-distortion.jpg" alt="Distortion" style="max-width:80%; max-height: 70vh"/></p>
 </section>
   </div>
-  <div class="slide hidden  browser-support" id="slide-13">
+  <div class="slide hidden  browser-support" id="slide-14">
     <section class="slide-content"><h3 id="browsers">Browsers</h3>
-<p><img src="images/chrome-android.png" alt="Chrome for Android"> <img src="images/chromium.png" alt="Chromium"> <img src="images/firefox-nightly.png" alt="Firefox Nightly"> <img src="images/servo.png" alt="Servo"> <img src="images/sbrowser5.0.png" alt="Samsung Internet"> <img src="images/edge.png" alt="Edge"> <img src="images/carmel.png" alt="Carmel"> </p>
+<p><img src="images/chrome-android.png" alt="Chrome for Android"> <img src="images/chromium.png" alt="Chromium"> <img src="images/firefox-nightly.png" alt="Firefox Nightly"> <img src="images/servo.png" alt="Servo"> <img src="images/sbrowser5.0.png" alt="Samsung Internet"> <img src="images/edge.png" alt="Edge"> <img src="images/oculus.png" alt="Oculus Browser"> </p>
 <p><a href="https://webvr.rocks/">webvr.rocks</a></p>
 </section>
   </div>
-  <div class="slide hidden  webvr-info valign-bottom" id="slide-14">
+  <div class="slide hidden  webvr-info valign-bottom" id="slide-15">
     <section class="slide-content"><div class="credit"><a href="https://webvr.info/">webvr.info</a></div></section>
   </div>
-  <div class="slide hidden  " id="slide-15">
+  <div class="slide hidden" id="slide-16">
+    <section class="slide-content"><p><img src="images/webvr-polyfill.png" alt="WebVR polyfill"></p>
+<ul>
+<li>Mobile: uses DeviceMotion API &amp; presumes Cardboard type viewer</li>
+</ul>
+</section>
+  </div>
+  <div class="slide hidden  " id="slide-17">
     <section class="slide-content"><p><img src="images/webvr-requirements.png" alt="Requirements"></p>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-16">
+  <div class="slide hidden  " id="slide-18">
     <section class="slide-content"><h2 id="webvr-api">WebVR API</h2>
 <h3 id="version-1-1-bit-ly-webvr-update-sep-2016-http-blog-tojicode-com-2016-09-update-on-webvr-spec-chrome-and-https-html-">Version &quot;1.1&quot; - <a href="http://blog.tojicode.com/2016/09/update-on-webvr-spec-chrome-and-https.html">bit.ly/webvr-update-sep-2016</a></h3>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-17">
+  <div class="slide hidden  " id="slide-19">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-comment">// Get list of available headsets</span>
 navigator.getVRDisplays();
 
@@ -958,7 +987,7 @@ navigator.getVRDisplays();
 VRDisplay.requestPresent({ source: myCanvas })</code></pre>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-18">
+  <div class="slide hidden  " id="slide-20">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-comment">// Like normal rAF but could be 90hz or more </span>
 VRDisplay.requestAnimationFrame();
 
@@ -966,7 +995,7 @@ VRDisplay.requestAnimationFrame();
 VRDisplay.submitFrame();</code></pre>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-19">
+  <div class="slide hidden  " id="slide-21">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-comment">/**
  * Get eye offset &amp; rendering dimensions to help us
  * construct a stereoscopic scene for the user.
@@ -980,16 +1009,16 @@ VRDisplay.getEyeParameters(VREye);
  VRDisplay.getFrameData();</code></pre>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-20">
+  <div class="slide hidden  " id="slide-22">
     <section class="slide-content"><p><img src="images/webgl-logo.png" alt="WebGL"></p>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-21">
+  <div class="slide hidden  " id="slide-23">
     <section class="slide-content"><h2 id="three-js">three.js</h2>
 <p><img src="images/threejs_org.png" alt="threejs.org"></p>
 <p class="caption"><a href="https://threejs.org/">threejs.org</a></p></section>
   </div>
-  <div class="slide hidden  " id="slide-22">
+  <div class="slide hidden  " id="slide-24">
     <section class="slide-content"><h3 id="let-s-make-a-spinning-cube">Let&#39;s make a spinning cube</h3>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> renderer = <span class="hljs-keyword">new</span> THREE.WebGLRenderer();
 
@@ -998,7 +1027,7 @@ renderer.setSize( width, height );
 <span class="hljs-built_in">document</span>.body.appendChild( renderer.domElement );</code></pre>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-23">
+  <div class="slide hidden  " id="slide-25">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> scene = <span class="hljs-keyword">new</span> THREE.Scene();
 
 <span class="hljs-keyword">var</span> camera = <span class="hljs-keyword">new</span> THREE.PerspectiveCamera(
@@ -1013,7 +1042,7 @@ camera.position.z = <span class="hljs-number">100</span>;
 scene.add( camera );</code></pre>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-24">
+  <div class="slide hidden  " id="slide-26">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> cube = <span class="hljs-keyword">new</span> THREE.Mesh(
   <span class="hljs-keyword">new</span> THREE.BoxGeometry( <span class="hljs-number">50</span>, <span class="hljs-number">50</span>, <span class="hljs-number">50</span> ), <span class="hljs-comment">// w, h, d</span>
   <span class="hljs-keyword">new</span> THREE.MeshBasicMaterial( {color: <span class="hljs-number">0xFF0000</span>} );
@@ -1022,7 +1051,7 @@ scene.add( camera );</code></pre>
 scene.add( cube );</code></pre>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-25">
+  <div class="slide hidden  " id="slide-27">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">animate</span>(<span class="hljs-params"></span>) </span>{
   cube.rotation.y += <span class="hljs-number">0.1</span>;
   renderer.render( scene, camera );
@@ -1032,7 +1061,7 @@ scene.add( cube );</code></pre>
 animate();</code></pre>
 <p style="margin-top: 1em"><a href="demos/threejs-spinning-cube/index.html">Here&#39;s one I made earlier</a></p></section>
   </div>
-  <div class="slide hidden  " id="slide-26">
+  <div class="slide hidden  " id="slide-28">
     <section class="slide-content"><pre><code class="lang-javascript"><span class="hljs-keyword">var</span> controls = <span class="hljs-keyword">new</span> THREE.VRControls( camera );
 <span class="hljs-keyword">var</span> effect = <span class="hljs-keyword">new</span> THREE.VREffect( renderer );
 
@@ -1042,23 +1071,23 @@ controls.update();
 effect.render( scene, camera );</code></pre>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-27">
+  <div class="slide hidden  " id="slide-29">
     <section class="slide-content"><p><img src="images/sbrowser-cubes1.jpg" alt="WebVR cubes on Samsung Internet" style="max-height:calc(100vh - 5em)"/></p>
 <p><a href="https://threejs.org/examples/webvr_cubes.html">threejs.org/examples/webvr_cubes.html</a></p>
 </section>
   </div>
-  <div class="slide hidden  webvr-cubes" id="slide-28">
+  <div class="slide hidden  webvr-cubes" id="slide-30">
     <section class="slide-content"></section>
   </div>
-  <div class="slide hidden  aframe valign-top" id="slide-29">
+  <div class="slide hidden  aframe valign-top" id="slide-31">
     <section class="slide-content"><h2 id="a-frame">A-Frame</h2>
 <!-- Remember to say it includes the polyfill for Cardboard --></section>
   </div>
-  <div class="slide hidden  " id="slide-30">
+  <div class="slide hidden  " id="slide-32">
     <section class="slide-content"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"aframe.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-31">
+  <div class="slide hidden  " id="slide-33">
     <section class="slide-content"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-scene</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a-sphere</span> <span class="hljs-attr">position</span>=<span class="hljs-string">"0 1.25 -1"</span> <span class="hljs-attr">radius</span>=<span class="hljs-string">"1.25"</span> 
             <span class="hljs-attr">color</span>=<span class="hljs-string">"#EF2D5E"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-sphere</span>&gt;</span>
@@ -1072,14 +1101,16 @@ effect.render( scene, camera );</code></pre>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a-scene</span>&gt;</span></code></pre>
 </section>
   </div>
-  <div class="slide hidden  iframe" id="slide-32">
-    <section class="slide-content"><iframe src="demos/aframe-basic/index.html" scrolling="no" width="100%" height="100%"></iframe></section>
+  <div class="slide hidden  iframe" id="slide-34">
+    <section class="slide-content"><iframe src="demos/aframe-basic/index.html" scrolling="no" width="100%" height="100%"></iframe>
+
+<h3 class="over-iframe"><a href="#">demo link here</a></h3></section>
   </div>
-  <div class="slide hidden  llama-carousel valign-top" id="slide-33">
+  <div class="slide hidden  llama-carousel valign-top" id="slide-35">
     <section class="slide-content"><h3 id="let-s-make-a-flickr-carousel">Let&#39;s make a Flickr carousel</h3>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-34">
+  <div class="slide hidden  " id="slide-36">
     <section class="slide-content"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"aframe-layout-component.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 
 ...
@@ -1088,7 +1119,7 @@ effect.render( scene, camera );</code></pre>
           <span class="hljs-attr">layout</span>=<span class="hljs-string">"type: circle; radius: 3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-entity</span>&gt;</span></code></pre>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-35">
+  <div class="slide hidden  " id="slide-37">
     <section class="slide-content"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"aframe-look-at-component.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">generateImage</span>(<span class="hljs-params">id, src</span>) </span>{
 
@@ -1103,13 +1134,13 @@ effect.render( scene, camera );</code></pre>
 }</code></pre>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-36">
+  <div class="slide hidden  " id="slide-38">
     <section class="slide-content"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span> <span class="hljs-attr">camera</span> <span class="hljs-attr">look-controls</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a-cursor</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-cursor</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a-entity</span>&gt;</span></code></pre>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-37">
+  <div class="slide hidden  " id="slide-39">
     <section class="slide-content"><h3 id="pre-canned-animations">Pre-canned animations</h3>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-animation</span> <span class="hljs-attr">begin</span>=<span class="hljs-string">"click"</span> 
              <span class="hljs-attr">attribute</span>=<span class="hljs-string">"rotation"</span> 
@@ -1118,117 +1149,120 @@ effect.render( scene, camera );</code></pre>
              <span class="hljs-attr">fill</span>=<span class="hljs-string">"forwards"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-animation</span>&gt;</span></code></pre>
 <p class="caption">Just place inside an element</p></section>
   </div>
-  <div class="slide hidden  " id="slide-38">
+  <div class="slide hidden  " id="slide-40">
     <section class="slide-content"><h3 id="or-take-control-with-tween-js">Or take control with Tween.js</h3>
 <pre><code class="lang-javascript"><span class="hljs-keyword">new</span> AFRAME.TWEEN.Tween(el.object3D.rotation)
      .to({y: targetRotation}, <span class="hljs-number">1000</span>) <span class="hljs-comment">// 1 second</span>
      .start();</code></pre>
 </section>
   </div>
-  <div class="slide hidden  sky-gawthrop" id="slide-39">
+  <div class="slide hidden  sky-gawthrop" id="slide-41">
     <section class="slide-content"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-assets</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"assets"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"mountainSky"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"images/sky_by_gawthrop.jpg"</span>/&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a-assets</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">a-sky</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"#mountainSky"</span>/&gt;</span></code></pre>
 </section>
   </div>
-  <div class="slide hidden  iframe" id="slide-40">
+  <div class="slide hidden  iframe" id="slide-42">
     <section class="slide-content"><iframe src="demos/aframe-flickr-carousel/index.html" scrolling="no" width="100%" height="100%"></iframe></section>
   </div>
-  <div class="slide hidden" id="slide-41">
+  <div class="slide hidden" id="slide-43">
     <section class="slide-content"><h2 id="examples">Examples</h2>
 </section>
   </div>
-  <div class="slide hidden  aframe-racer valign-bottom extra-vignette-1" id="slide-42">
+  <div class="slide hidden  aframe-racer valign-bottom extra-vignette-1" id="slide-44">
     <section class="slide-content"><p><a href="https://samsunginter.net/a-frame-demos/racer/">samsunginter.net/a-frame-demos/racer/</a></p>
 </section>
   </div>
-  <div class="slide hidden  pwacman valign-bottom extra-vignette-1" id="slide-43">
+  <div class="slide hidden  pwacman valign-bottom extra-vignette-1" id="slide-45">
     <section class="slide-content"><p><a href="https://samsunginter.net/pwacman">samsunginter.net/pwacman</a></p>
 </section>
   </div>
-  <div class="slide hidden  bubble valign-bottom extra-vignette-2" id="slide-44">
+  <div class="slide hidden  bubble valign-bottom extra-vignette-2" id="slide-46">
     <section class="slide-content"><p><a href="https://samsunginter.net/bubble/">samsunginter.net/bubble/</a></p>
 </section>
   </div>
-  <div class="slide hidden  bubble-hollywood valign-bottom extra-vignette-2" id="slide-45">
+  <div class="slide hidden  bubble-hollywood valign-bottom extra-vignette-2" id="slide-47">
     <section class="slide-content"><p><a href="http://bit.ly/hollywood-bubble">bit.ly/hollywood-bubble</a></p>
 </section>
   </div>
-  <div class="slide hidden  word-drop valign-bottom extra-vignette-1" id="slide-46">
+  <div class="slide hidden  word-drop valign-bottom extra-vignette-1" id="slide-48">
     <section class="slide-content"><p><a href="https://samsunginter.net/word-drop/">samsunginter.net/word-drop/</a></p>
 </section>
   </div>
-  <div class="slide hidden  within valign-bottom extra-vignette-2" id="slide-47">
+  <div class="slide hidden  within valign-bottom extra-vignette-2" id="slide-49">
     <section class="slide-content"><p><a href="https://vr.with.in">vr.with.in</a></p>
 </section>
   </div>
-  <div class="slide hidden  playcanvas-lab valign-bottom extra-vignette-1" id="slide-48">
+  <div class="slide hidden  playcanvas-lab valign-bottom extra-vignette-1" id="slide-50">
     <section class="slide-content"><p><a href="https://webvr.playcanvas.com">webvr.playcanvas.com</a></p>
 </section>
   </div>
-  <div class="slide hidden  pva bg-fade fade-less" id="slide-49">
+  <div class="slide hidden  renault valign-bottom extra-vignette-1" id="slide-51">
+    <section class="slide-content"><p><a href="https://kadjar-vr.littleworkshop.fr/">kadjar-vr.littleworkshop.fr</a></p>
+</section>
+  </div>
+  <div class="slide hidden  pva bg-fade fade-less" id="slide-52">
     <section class="slide-content"><h1 id="progressive-vr-apps">Progressive VR Apps</h1>
 <div class="credit"><a href="https://commons.wikimedia.org/wiki/File:Pva_wood_glue.jpg">Victuallers</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-50">
+  <div class="slide hidden  img-with-header" id="slide-53">
     <section class="slide-content"><h3 id="-continuous-browsing-experiences-">&quot;Continuous browsing experiences&quot;</h3>
 <p><img src="images/continuous-browsing-experience.png" alt="Continuous browsing experiences"></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-51">
+  <div class="slide hidden  img-with-header" id="slide-54">
     <section class="slide-content"><h3 id="responsive-design">Responsive Design</h3>
 <p><img src="images/responsive-design.png" alt="Responsive design"></p>
 <p><em>Assume small screen.</em></p>
 <p><em>If &gt; x pixels, apply desktop styles.</em></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-52">
+  <div class="slide hidden  img-with-header" id="slide-55">
     <section class="slide-content"><h3 id="responsive-experience">Responsive Experience</h3>
 <p><img src="images/responsive-experiences.png" alt="Responsive experiences"></p>
 <p><em>Assume no VR headset.</em></p>
 <p><em>If WebVR/polyfill &amp; user taps button, start VR experience.</em></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-53">
+  <div class="slide hidden  img-with-header" id="slide-56">
     <section class="slide-content"><h3 id="responsive-fidelity">Responsive Fidelity</h3>
 <p><img src="images/responsive-fidelity.png" alt="Responsive fidelity"></p>
 <p><em>Assume low-powered.</em> </p>
 <p><em>If smooth frame rate, download higher-res assets.</em></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-caption" id="slide-54">
+  <div class="slide hidden  img-with-caption" id="slide-57">
     <section class="slide-content"><p><img src="images/playcanvas-man-o-war.jpg" alt="PlayCanvas Man-O-War"></p>
 <p><a href="http://bit.ly/playcanvas-gun-project">bit.ly/playcanvas-gun-project</a></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-caption gamepad-support" id="slide-55">
+  <div class="slide hidden  img-with-caption gamepad-support" id="slide-58">
     <section class="slide-content"><p><img src="images/gamepad-support.png" alt="Gamepad API support"></p>
 <p><a href="bit.ly/beta-gamepad-support">bit.ly/beta-gamepad-support</a></p>
 </section>
   </div>
-  <div class="slide hidden  controller valign-bottom" id="slide-56">
+  <div class="slide hidden  controller valign-bottom" id="slide-59">
     <section class="slide-content"><p><a href="http://www.samsung.com/global/galaxy/gear-vr/#controller">samsung.com/global/galaxy/gear-vr/#controller</a></p>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-57">
+  <div class="slide hidden  " id="slide-60">
     <section class="slide-content"><h2 id="where-next-">Where next?</h2>
 <ul>
-<li>Touchpad / controllers</li>
 <li>Physics / gaming engines</li>
 <li>Web Audio</li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden  valign-top another-world" id="slide-58">
+  <div class="slide hidden  valign-top another-world" id="slide-61">
     <section class="slide-content"><h2 id="from-web-sites-to-web-worlds-">From web sites to web <em>worlds</em></h2>
 </section>
   </div>
-  <div class="slide hidden  earth-rising valign-top" id="slide-59">
+  <div class="slide hidden  earth-rising valign-top" id="slide-62">
     <section class="slide-content"><h3 id="what-worlds-will-you-create-">What worlds will you create?</h3>
 </section>
   </div>
-  <div class="slide hidden  bg-fade-less-grey thanks valign-bottom" id="slide-60">
+  <div class="slide hidden  bg-fade-less-grey thanks valign-bottom" id="slide-63">
     <section class="slide-content"><h1 id="thanks-">Thanks!</h1>
 <div class="social">
   <h3 class="twitter"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></h3>
