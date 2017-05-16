@@ -1,4 +1,5 @@
-title: WebVR - Getting started...
+title: WebVR - Getting started
+description: Getting started with VR for the Web. Peter O'Shaughnessy's slides from Nürnberg Web Week 2017, May 2017.
 output: public/index.html
 theme: peter-theme
 themecolour: 222222
