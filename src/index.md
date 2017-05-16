@@ -410,10 +410,6 @@ new AFRAME.TWEEN.Tween(el.object3D.rotation)
 
 [vr.with.in](https://vr.with.in)
 
--- playcanvas-lab valign-bottom extra-vignette-1
-
-[webvr.playcanvas.com](https://webvr.playcanvas.com)
-
 -- renault valign-bottom extra-vignette-1
 
 [kadjar-vr.littleworkshop.fr](https://kadjar-vr.littleworkshop.fr/)
