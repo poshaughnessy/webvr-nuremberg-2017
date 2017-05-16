@@ -292,7 +292,7 @@ effect.render( scene, camera );
 
 <iframe src="demos/aframe-basic/index.html" scrolling="no" width="100%" height="100%"></iframe>
 
-<h3 class="over-iframe">[demo link here](#)</h3>
+<h3 class="over-iframe">[bit.ly/aframe-basic](https://bit.ly/aframe-basic)</h3>
 
 -- llama-carousel valign-top
 
@@ -377,6 +377,8 @@ new AFRAME.TWEEN.Tween(el.object3D.rotation)
 -- iframe
 
 <iframe src="demos/aframe-flickr-carousel/index.html" scrolling="no" width="100%" height="100%"></iframe>
+
+<h3 class="over-iframe">[bit.ly/aframe-carousel](https://bit.ly/aframe-carousel)</h3>
 
 -- example-with-caption
 
