@@ -207,7 +207,7 @@ scene.add( camera );
 ```javascript
 var cube = new THREE.Mesh(
   new THREE.BoxGeometry( 50, 50, 50 ), // w, h, d
-  new THREE.MeshBasicMaterial( {color: 0xFF0000} );
+  new THREE.MeshBasicMaterial( {color: 0xFF0000} )
 );
 
 scene.add( cube );
