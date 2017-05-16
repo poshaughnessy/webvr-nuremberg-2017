@@ -264,6 +264,7 @@ effect.render( scene, camera );
 <script src="aframe.js"></script>
 ```
 
+<p style="margin-top: 1em">[Starting template](demos/starting-template-aframe/index.html)</p>
 
 -- 
 
