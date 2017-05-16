@@ -182,6 +182,7 @@ renderer.setSize( width, height );
 document.body.appendChild( renderer.domElement );
 ```
 
+<p style="margin-top: 1em">[Starting template](demos/starting-template/index.html)</p>
 
 -- 
 
