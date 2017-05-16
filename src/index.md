@@ -24,12 +24,13 @@ controls: false
 
 [samsunginter.net/about](https://samsunginter.net/about)
 
--- virtuality
+-- virtuality valign-bottom extra-vignette-2
 
--- white
+### 1993
 
-![VR headsets](images/vr-headsets.jpg)
+-- white vr-headsets valign-bottom
 
+### 2017
 
 -- valign-top cliff
 
@@ -58,9 +59,11 @@ controls: false
 
 ![WebVR](images/webvr-logo-square.png)
 
--- metaverse valign-bottom extra-vignette-2
+-- metaverse valign-bottom extra-vignette-2 example-with-caption
 
 [metaverse.samsunginter.net](https://metaverse.samsunginter.net/)
+
+<div class="caption">By [Ada Rose Edwards](https://twitter.com/Lady_Ada_King)</div>
 
 -- iframe iframe-with-caption
 
@@ -93,7 +96,7 @@ controls: false
 
 ### Browsers
 
-![Chrome for Android](images/chrome-android.png) ![Chromium](images/chromium.png) ![Firefox Nightly](images/firefox-nightly.png) ![Servo](images/servo.png) ![Samsung Internet](images/sbrowser5.0.png) ![Edge](images/edge.png) ![Oculus Browser](images/oculus.png) 
+![Chrome for Android](images/chrome-android.png) ![Chromium](images/chromium.png) ![Firefox Nightly](images/firefox-nightly.png) ![Servo](images/servo.png) ![Samsung Internet](images/sbrowser5.4.png) ![Edge](images/edge.png) ![Oculus Browser](images/oculus.png) 
 
 [webvr.rocks](https://webvr.rocks/)
 
@@ -106,7 +109,9 @@ controls: false
 
 ![WebVR polyfill](images/webvr-polyfill.png)
 
-* Mobile: uses DeviceMotion API & presumes Cardboard type viewer
+* VRDisplay depends on browser config
+* Mobile: uses DeviceMotion API & "CardboardVRDisplay"
+* Desktop: uses "MouseKeyboardVRDisplay"
 
 -- 
 
@@ -373,31 +378,47 @@ new AFRAME.TWEEN.Tween(el.object3D.rotation)
 
 <iframe src="demos/aframe-flickr-carousel/index.html" scrolling="no" width="100%" height="100%"></iframe>
 
+-- example-with-caption
+
+### [samsunginter.net/a-frame-tutorial/](https://samsunginter.net/a-frame-tutorial/)
+
+<img style="max-height: calc(100vh - 10em)" src="images/aframe-tutorial.png" alt="A-Frame tutorial"/>
+
+<div class="caption">By [Ada Rose Edwards](https://twitter.com/Lady_Ada_King)</div>
+
 --
 
-## Examples
+# More Examples!
 
--- aframe-racer valign-bottom extra-vignette-1
+-- aframe-racer valign-bottom extra-vignette-1 example-with-caption
 
 [samsunginter.net/a-frame-demos/racer/](https://samsunginter.net/a-frame-demos/racer/)
 
--- pwacman valign-bottom extra-vignette-1
+<div class="caption">By [Ada Rose Edwards](https://twitter.com/Lady_Ada_King)</div>
+
+-- pwacman valign-bottom extra-vignette-1 example-with-caption
 
 [samsunginter.net/pwacman](https://samsunginter.net/pwacman)
 
--- bubble valign-bottom extra-vignette-2
+<div class="caption">By [Diego Gonzalez](https://twitter.com/diekus)</div>
+
+-- bubble valign-bottom extra-vignette-2 example-with-caption
 
 [samsunginter.net/bubble/](https://samsunginter.net/bubble/)
+
+<div class="caption">By [Diego Gonzalez](https://twitter.com/diekus)</div>
 
 -- bubble-hollywood valign-bottom extra-vignette-2
 
 [bit.ly/hollywood-bubble](http://bit.ly/hollywood-bubble)
 
--- word-drop valign-bottom extra-vignette-1
+-- word-drop valign-bottom extra-vignette-1 example-with-caption
 
 [samsunginter.net/word-drop/](https://samsunginter.net/word-drop/)
 
--- within valign-bottom extra-vignette-2
+<div class="caption">By [Diego Gonzalez](https://twitter.com/diekus)</div>
+
+-- within valign-bottom extra-vignette-2 example-with-caption
 
 [vr.with.in](https://vr.with.in)
 
@@ -471,8 +492,9 @@ new AFRAME.TWEEN.Tween(el.object3D.rotation)
 
 ## Where next?
 
-* Physics / gaming engines
-* Web Audio
+* Physics / gaming engines?
+* Web Audio?
+* Wherever your imagination takes you!
 
 -- valign-top another-world
 
@@ -480,7 +502,12 @@ new AFRAME.TWEEN.Tween(el.object3D.rotation)
 
 -- earth-rising valign-top
 
-### What worlds will you create?
+### What will you create?
+
+-- vrtogether valign-top
+
+## Join our Virtual VR Hackathon!
+### [bit.ly/vr-hackathon-2017](https://bit.ly/vr-hackathon-2017)
 
 -- bg-fade-less-grey thanks valign-bottom
 

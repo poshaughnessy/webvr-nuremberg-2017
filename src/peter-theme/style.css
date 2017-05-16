@@ -761,6 +761,13 @@ h2 + .quote {
   background-image: url(images/virtuality.jpg);
 }
 
+.slide.vr-headsets:before {
+  background-image: url(images/vr-headsets.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .slide.grandma:before {
   background-image: url(images/grandma-vr-joy.jpg);
 }
@@ -772,15 +779,18 @@ h2 + .quote {
 .slide.webvr-info:before {
   background-image: url(images/webvr-info.png);
   box-shadow: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .slide.white:before {
-  background: #fff;
+  background-color: #fff;
   box-shadow: none;
 }
 
 .slide.light-grey:before {
-  background: #eee;
+  background: #f1f1f1;
   box-shadow: none;
 }
 
@@ -861,4 +871,32 @@ h2 + .quote {
 .aframe h2 {
   color: #666;
   text-shadow: none;
+}
+
+.white h3,
+.light-grey h3 {
+  color: #666;
+}
+
+.webvr-info .credit {
+  font-size: 1.1em;
+}
+
+.example-with-caption p {
+  margin-bottom: 0.5em;
+}
+
+.example-with-caption .caption {
+  margin-top: 0;
+}
+
+.slide.vrtogether:before {
+  background-image: url(images/vrtogether-hackathon.jpg);
+}
+
+.vrtogether h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
