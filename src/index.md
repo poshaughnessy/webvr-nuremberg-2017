@@ -521,5 +521,5 @@ new AFRAME.TWEEN.Tween(el.object3D.rotation)
   <h3 class="github">[github.com/samsunginternet](https://github.com/SamsungInternet/)</h3>
 </div>
 
-
+<div class="caption">These slides are up at [bit.ly/webvr-nuremberg-2017](https://bit.ly/webvr-nuremberg-2017)</div>
 
