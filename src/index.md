@@ -1,7 +1,10 @@
 title: WebVR - Getting started...
 output: public/index.html
 theme: peter-theme
-controls: false
+themecolour: 222222
+url: https://poshaughnessy.github.io/webvr-nuremberg-2017/
+image: https://poshaughnessy.github.io/webvr-nuremberg-2017/images/preview.jpg
+controls: true
 
 -- bg-fade-grey intro
 
