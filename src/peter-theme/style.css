@@ -720,7 +720,7 @@ h2 + .quote {
 }
 
 .slide.within:before {
-  background-image: url(images/within.png);
+  background-image: url(images/within.jpg);
 }
 
 .slide.playcanvas-lab:before {
@@ -802,7 +802,7 @@ h2 + .quote {
 }
 
 .slide.llama-carousel:before {
-  background-image: url(images/llama-viewer.png);
+  background-image: url(images/llama-viewer.jpg);
 }
 
 .slide.webvr-cubes:before {
