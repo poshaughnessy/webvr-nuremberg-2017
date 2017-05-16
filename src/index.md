@@ -332,16 +332,6 @@ function generateImage(id, src) {
 }
 ```
 
-
--- 
-
-```html
-<a-entity camera look-controls>
-  <a-cursor></a-cursor>
-</a-entity>
-```
-
-
 -- 
 
 ### Pre-canned animations
@@ -400,12 +390,6 @@ new AFRAME.TWEEN.Tween(el.object3D.rotation)
 
 <div class="caption">By [Ada Rose Edwards](https://twitter.com/Lady_Ada_King)</div>
 
--- pwacman valign-bottom extra-vignette-1 example-with-caption
-
-[samsunginter.net/pwacman](https://samsunginter.net/pwacman)
-
-<div class="caption">By [Diego Gonzalez](https://twitter.com/diekus)</div>
-
 -- bubble valign-bottom extra-vignette-2 example-with-caption
 
 [samsunginter.net/bubble/](https://samsunginter.net/bubble/)
@@ -434,53 +418,11 @@ new AFRAME.TWEEN.Tween(el.object3D.rotation)
 
 [kadjar-vr.littleworkshop.fr](https://kadjar-vr.littleworkshop.fr/)
 
--- pva bg-fade fade-less
+-- pwacman valign-bottom extra-vignette-1 example-with-caption
 
-# Progressive VR Apps
+[samsunginter.net/pwacman](https://samsunginter.net/pwacman)
 
-<div class="credit">[Victuallers](https://commons.wikimedia.org/wiki/File:Pva_wood_glue.jpg)</div>
-
--- img-with-header
-
-### "Continuous browsing experiences"
-
-![Continuous browsing experiences](images/continuous-browsing-experience.png)
-
--- img-with-header
-
-### Responsive Design
-
-![Responsive design](images/responsive-design.png)
-
-*Assume small screen.*
-
-*If > x pixels, apply desktop styles.*
-
--- img-with-header
-
-### Responsive Experience
-
-![Responsive experiences](images/responsive-experiences.png)
-
-*Assume no VR headset.*
-
-*If WebVR/polyfill & user taps button, start VR experience.*
-
--- img-with-header
-
-### Responsive Fidelity
-
-![Responsive fidelity](images/responsive-fidelity.png)
-
-*Assume low-powered.* 
-
-*If smooth frame rate, download higher-res assets.*
-
--- img-with-caption
-
-![PlayCanvas Man-O-War](images/playcanvas-man-o-war.jpg)
-
-[bit.ly/playcanvas-gun-project](http://bit.ly/playcanvas-gun-project)
+<div class="caption">By [Diego Gonzalez](https://twitter.com/diekus)</div>
 
 -- img-with-caption gamepad-support
 
