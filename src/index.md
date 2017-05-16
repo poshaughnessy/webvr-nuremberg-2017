@@ -115,11 +115,6 @@ controls: false
 
 -- 
 
-![Requirements](images/webvr-requirements.png)
-
-
--- 
-
 ## WebVR API
 
 ### Version "1.1" - [bit.ly/webvr-update-sep-2016](http://blog.tojicode.com/2016/09/update-on-webvr-spec-chrome-and-https.html)
@@ -162,11 +157,9 @@ VRDisplay.getEyeParameters(VREye);
 
 ```
 
-
 -- 
 
-![WebGL](images/webgl-logo.png)
-
+![Requirements](images/webvr-requirements.png)
 
 -- 
 
