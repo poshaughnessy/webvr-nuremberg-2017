@@ -769,6 +769,13 @@ h2 + .quote {
   background-image: url(images/virtuality.jpg);
 }
 
+.slide.vr-headsets:before {
+  background-image: url(images/vr-headsets.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .slide.grandma:before {
   background-image: url(images/grandma-vr-joy.jpg);
 }
@@ -780,15 +787,18 @@ h2 + .quote {
 .slide.webvr-info:before {
   background-image: url(images/webvr-info.png);
   box-shadow: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .slide.white:before {
-  background: #fff;
+  background-color: #fff;
   box-shadow: none;
 }
 
 .slide.light-grey:before {
-  background: #eee;
+  background: #f1f1f1;
   box-shadow: none;
 }
 
@@ -870,6 +880,35 @@ h2 + .quote {
   color: #666;
   text-shadow: none;
 }
+
+.white h3,
+.light-grey h3 {
+  color: #666;
+}
+
+.webvr-info .credit {
+  font-size: 1.1em;
+}
+
+.example-with-caption p {
+  margin-bottom: 0.5em;
+}
+
+.example-with-caption .caption {
+  margin-top: 0;
+}
+
+.slide.vrtogether:before {
+  background-image: url(images/vrtogether-hackathon.jpg);
+}
+
+.vrtogether h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
   </style>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
   <link rel="icon" href="images/favicon.png" type=”image/png">
@@ -897,11 +936,12 @@ h2 + .quote {
 <p><a href="https://samsunginter.net/about">samsunginter.net/about</a></p>
 </section>
   </div>
-  <div class="slide hidden  virtuality" id="slide-3">
-    <section class="slide-content"></section>
+  <div class="slide hidden  virtuality valign-bottom extra-vignette-2" id="slide-3">
+    <section class="slide-content"><h3 id="1993">1993</h3>
+</section>
   </div>
-  <div class="slide hidden  white" id="slide-4">
-    <section class="slide-content"><p><img src="images/vr-headsets.jpg" alt="VR headsets"></p>
+  <div class="slide hidden  white vr-headsets valign-bottom" id="slide-4">
+    <section class="slide-content"><h3 id="2017">2017</h3>
 </section>
   </div>
   <div class="slide hidden  valign-top cliff" id="slide-5">
@@ -925,9 +965,9 @@ h2 + .quote {
     <section class="slide-content"><p><img src="images/webvr-logo-square.png" alt="WebVR"></p>
 </section>
   </div>
-  <div class="slide hidden  metaverse valign-bottom extra-vignette-2" id="slide-9">
+  <div class="slide hidden  metaverse valign-bottom extra-vignette-2 example-with-caption" id="slide-9">
     <section class="slide-content"><p><a href="https://metaverse.samsunginter.net/">metaverse.samsunginter.net</a></p>
-</section>
+<div class="caption">By <a href="https://twitter.com/Lady_Ada_King">Ada Rose Edwards</a></div></section>
   </div>
   <div class="slide hidden  iframe iframe-with-caption" id="slide-10">
     <section class="slide-content"><iframe width="90%" height="90%" src="https://www.youtube.com/embed/jMcLQoMR78w" frameborder="0" allowfullscreen></iframe>
@@ -956,7 +996,7 @@ h2 + .quote {
   </div>
   <div class="slide hidden  browser-support" id="slide-14">
     <section class="slide-content"><h3 id="browsers">Browsers</h3>
-<p><img src="images/chrome-android.png" alt="Chrome for Android"> <img src="images/chromium.png" alt="Chromium"> <img src="images/firefox-nightly.png" alt="Firefox Nightly"> <img src="images/servo.png" alt="Servo"> <img src="images/sbrowser5.0.png" alt="Samsung Internet"> <img src="images/edge.png" alt="Edge"> <img src="images/oculus.png" alt="Oculus Browser"> </p>
+<p><img src="images/chrome-android.png" alt="Chrome for Android"> <img src="images/chromium.png" alt="Chromium"> <img src="images/firefox-nightly.png" alt="Firefox Nightly"> <img src="images/servo.png" alt="Servo"> <img src="images/sbrowser5.4.png" alt="Samsung Internet"> <img src="images/edge.png" alt="Edge"> <img src="images/oculus.png" alt="Oculus Browser"> </p>
 <p><a href="https://webvr.rocks/">webvr.rocks</a></p>
 </section>
   </div>
@@ -966,7 +1006,9 @@ h2 + .quote {
   <div class="slide hidden" id="slide-16">
     <section class="slide-content"><p><img src="images/webvr-polyfill.png" alt="WebVR polyfill"></p>
 <ul>
-<li>Mobile: uses DeviceMotion API &amp; presumes Cardboard type viewer</li>
+<li>VRDisplay depends on browser config</li>
+<li>Mobile: uses DeviceMotion API &amp; &quot;CardboardVRDisplay&quot;</li>
+<li>Desktop: uses &quot;MouseKeyboardVRDisplay&quot;</li>
 </ul>
 </section>
   </div>
@@ -1166,103 +1208,114 @@ effect.render( scene, camera );</code></pre>
   <div class="slide hidden  iframe" id="slide-42">
     <section class="slide-content"><iframe src="demos/aframe-flickr-carousel/index.html" scrolling="no" width="100%" height="100%"></iframe></section>
   </div>
-  <div class="slide hidden" id="slide-43">
-    <section class="slide-content"><h2 id="examples">Examples</h2>
+  <div class="slide hidden  example-with-caption" id="slide-43">
+    <section class="slide-content"><h3 id="-samsunginter-net-a-frame-tutorial-https-samsunginter-net-a-frame-tutorial-"><a href="https://samsunginter.net/a-frame-tutorial/">samsunginter.net/a-frame-tutorial/</a></h3>
+<p><img style="max-height: calc(100vh - 10em)" src="images/aframe-tutorial.png" alt="A-Frame tutorial"/></p>
+<div class="caption">By <a href="https://twitter.com/Lady_Ada_King">Ada Rose Edwards</a></div></section>
+  </div>
+  <div class="slide hidden" id="slide-44">
+    <section class="slide-content"><h1 id="more-examples-">More Examples!</h1>
 </section>
   </div>
-  <div class="slide hidden  aframe-racer valign-bottom extra-vignette-1" id="slide-44">
+  <div class="slide hidden  aframe-racer valign-bottom extra-vignette-1 example-with-caption" id="slide-45">
     <section class="slide-content"><p><a href="https://samsunginter.net/a-frame-demos/racer/">samsunginter.net/a-frame-demos/racer/</a></p>
-</section>
+<div class="caption">By <a href="https://twitter.com/Lady_Ada_King">Ada Rose Edwards</a></div></section>
   </div>
-  <div class="slide hidden  pwacman valign-bottom extra-vignette-1" id="slide-45">
+  <div class="slide hidden  pwacman valign-bottom extra-vignette-1 example-with-caption" id="slide-46">
     <section class="slide-content"><p><a href="https://samsunginter.net/pwacman">samsunginter.net/pwacman</a></p>
-</section>
+<div class="caption">By <a href="https://twitter.com/diekus">Diego Gonzalez</a></div></section>
   </div>
-  <div class="slide hidden  bubble valign-bottom extra-vignette-2" id="slide-46">
+  <div class="slide hidden  bubble valign-bottom extra-vignette-2 example-with-caption" id="slide-47">
     <section class="slide-content"><p><a href="https://samsunginter.net/bubble/">samsunginter.net/bubble/</a></p>
-</section>
+<div class="caption">By <a href="https://twitter.com/diekus">Diego Gonzalez</a></div></section>
   </div>
-  <div class="slide hidden  bubble-hollywood valign-bottom extra-vignette-2" id="slide-47">
+  <div class="slide hidden  bubble-hollywood valign-bottom extra-vignette-2" id="slide-48">
     <section class="slide-content"><p><a href="http://bit.ly/hollywood-bubble">bit.ly/hollywood-bubble</a></p>
 </section>
   </div>
-  <div class="slide hidden  word-drop valign-bottom extra-vignette-1" id="slide-48">
+  <div class="slide hidden  word-drop valign-bottom extra-vignette-1 example-with-caption" id="slide-49">
     <section class="slide-content"><p><a href="https://samsunginter.net/word-drop/">samsunginter.net/word-drop/</a></p>
-</section>
+<div class="caption">By <a href="https://twitter.com/diekus">Diego Gonzalez</a></div></section>
   </div>
-  <div class="slide hidden  within valign-bottom extra-vignette-2" id="slide-49">
+  <div class="slide hidden  within valign-bottom extra-vignette-2 example-with-caption" id="slide-50">
     <section class="slide-content"><p><a href="https://vr.with.in">vr.with.in</a></p>
 </section>
   </div>
-  <div class="slide hidden  playcanvas-lab valign-bottom extra-vignette-1" id="slide-50">
+  <div class="slide hidden  playcanvas-lab valign-bottom extra-vignette-1" id="slide-51">
     <section class="slide-content"><p><a href="https://webvr.playcanvas.com">webvr.playcanvas.com</a></p>
 </section>
   </div>
-  <div class="slide hidden  renault valign-bottom extra-vignette-1" id="slide-51">
+  <div class="slide hidden  renault valign-bottom extra-vignette-1" id="slide-52">
     <section class="slide-content"><p><a href="https://kadjar-vr.littleworkshop.fr/">kadjar-vr.littleworkshop.fr</a></p>
 </section>
   </div>
-  <div class="slide hidden  pva bg-fade fade-less" id="slide-52">
+  <div class="slide hidden  pva bg-fade fade-less" id="slide-53">
     <section class="slide-content"><h1 id="progressive-vr-apps">Progressive VR Apps</h1>
 <div class="credit"><a href="https://commons.wikimedia.org/wiki/File:Pva_wood_glue.jpg">Victuallers</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-53">
+  <div class="slide hidden  img-with-header" id="slide-54">
     <section class="slide-content"><h3 id="-continuous-browsing-experiences-">&quot;Continuous browsing experiences&quot;</h3>
 <p><img src="images/continuous-browsing-experience.png" alt="Continuous browsing experiences"></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-54">
+  <div class="slide hidden  img-with-header" id="slide-55">
     <section class="slide-content"><h3 id="responsive-design">Responsive Design</h3>
 <p><img src="images/responsive-design.png" alt="Responsive design"></p>
 <p><em>Assume small screen.</em></p>
 <p><em>If &gt; x pixels, apply desktop styles.</em></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-55">
+  <div class="slide hidden  img-with-header" id="slide-56">
     <section class="slide-content"><h3 id="responsive-experience">Responsive Experience</h3>
 <p><img src="images/responsive-experiences.png" alt="Responsive experiences"></p>
 <p><em>Assume no VR headset.</em></p>
 <p><em>If WebVR/polyfill &amp; user taps button, start VR experience.</em></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-56">
+  <div class="slide hidden  img-with-header" id="slide-57">
     <section class="slide-content"><h3 id="responsive-fidelity">Responsive Fidelity</h3>
 <p><img src="images/responsive-fidelity.png" alt="Responsive fidelity"></p>
 <p><em>Assume low-powered.</em> </p>
 <p><em>If smooth frame rate, download higher-res assets.</em></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-caption" id="slide-57">
+  <div class="slide hidden  img-with-caption" id="slide-58">
     <section class="slide-content"><p><img src="images/playcanvas-man-o-war.jpg" alt="PlayCanvas Man-O-War"></p>
 <p><a href="http://bit.ly/playcanvas-gun-project">bit.ly/playcanvas-gun-project</a></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-caption gamepad-support" id="slide-58">
+  <div class="slide hidden  img-with-caption gamepad-support" id="slide-59">
     <section class="slide-content"><p><img src="images/gamepad-support.png" alt="Gamepad API support"></p>
 <p><a href="bit.ly/beta-gamepad-support">bit.ly/beta-gamepad-support</a></p>
 </section>
   </div>
-  <div class="slide hidden  controller valign-bottom" id="slide-59">
+  <div class="slide hidden  controller valign-bottom" id="slide-60">
     <section class="slide-content"><p><a href="http://www.samsung.com/global/galaxy/gear-vr/#controller">samsung.com/global/galaxy/gear-vr/#controller</a></p>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-60">
+  <div class="slide hidden  " id="slide-61">
     <section class="slide-content"><h2 id="where-next-">Where next?</h2>
 <ul>
-<li>Physics / gaming engines</li>
-<li>Web Audio</li>
+<li>Physics / gaming engines?</li>
+<li>Web Audio?</li>
+<li>Wherever your imagination takes you!</li>
 </ul>
 </section>
   </div>
-  <div class="slide hidden  valign-top another-world" id="slide-61">
+  <div class="slide hidden  valign-top another-world" id="slide-62">
     <section class="slide-content"><h2 id="from-web-sites-to-web-worlds-">From web sites to web <em>worlds</em></h2>
 </section>
   </div>
-  <div class="slide hidden  earth-rising valign-top" id="slide-62">
-    <section class="slide-content"><h3 id="what-worlds-will-you-create-">What worlds will you create?</h3>
+  <div class="slide hidden  earth-rising valign-top" id="slide-63">
+    <section class="slide-content"><h3 id="what-will-you-create-">What will you create?</h3>
 </section>
   </div>
-  <div class="slide hidden  bg-fade-less-grey thanks valign-bottom" id="slide-63">
+  <div class="slide hidden  vrtogether valign-top" id="slide-64">
+    <section class="slide-content"><h2 id="join-our-virtual-vr-hackathon-">Join our Virtual VR Hackathon!</h2>
+<h3 id="-bit-ly-vr-hackathon-2017-https-bit-ly-vr-hackathon-2017-"><a href="https://bit.ly/vr-hackathon-2017">bit.ly/vr-hackathon-2017</a></h3>
+</section>
+  </div>
+  <div class="slide hidden  bg-fade-less-grey thanks valign-bottom" id="slide-65">
     <section class="slide-content"><h1 id="thanks-">Thanks!</h1>
 <div class="social">
   <h3 class="twitter"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></h3>
