@@ -201,6 +201,8 @@ blockquote {
   justify-content: center;
   height: 100%;
   margin: 0;
+  -webkit-text-shadow: 1px 1px 0 #666;
+  text-shadow: 1px 1px 0 #666;
 }
 
 .left {
@@ -594,16 +596,6 @@ h2 + .quote {
   margin-top: 2em;
 }
 
-.align-top .slide-content {
-  padding: 0;
-  height: 100%;
-}
-
-.align-top .slide-content img {
-  position: relative;
-  top: 0;
-}
-
 /* For background images so we can apply filters */
 .slide {
   overflow: auto;
@@ -713,8 +705,8 @@ h2 + .quote {
   background-image: url(images/word-drop.jpg);
 }
 
-.slide.metaverse-audience:before {
-  background-image: url(images/metaverse-audience.jpg);
+.slide.metaverse:before {
+  background-image: url(images/metaverse.jpg);
 }
 
 .slide.within:before {
@@ -801,6 +793,11 @@ h2 + .quote {
   background-image: url(images/sky_by_gawthrop.jpg);
 }
 
+.slide.world-wide-web:before {
+  background-image: url(images/world-wide-web.jpg);
+
+}
+
 .browser-support p img {
   max-width: 11%;
   padding: 0 1vw;
@@ -841,4 +838,13 @@ h2 + .quote {
 
 .video-360 img {
   max-height: 50vh;
+}
+
+.metaverse p a {
+  font-size: 2em;
+}
+
+.aframe h2 {
+  color: #666;
+  text-shadow: none;
 }

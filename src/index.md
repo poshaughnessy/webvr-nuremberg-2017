@@ -14,11 +14,11 @@ controls: false
   <p>[@samsunginternet](https://twitter.com/samsunginternet)</p>
 </div>
 
--- align-top img-with-caption
+-- img-with-caption
 
-![Samsung Internet icon on homescreen](images/samsung-internet-beta-phone-blur.png)
+![Samsung Internet logo](images/logo_Light_Font.png)
 
-[Samsung Internet for Android](http://bit.ly/samsung-internet-open-beta)
+[samsunginter.net/about](https://samsunginter.net/about)
 
 -- virtuality
 
@@ -31,55 +31,32 @@ controls: false
 
 ## Presence
 
+<div class="credit">[Fotolia](http://www.fotolia.com/)</div>
+
 
 -- valign-bottom grandma
 
-<blockquote>&ldquo;I've made a lot of applications & nothing I ever created was ever going to make someone 
-laugh, cry, recoil or scream like VR can.&rdquo;</blockquote>
+<blockquote>&ldquo;I've made a lot of applications & nothing I ever created was ever going to make someone laugh, cry, recoil or scream like VR can.&rdquo;</blockquote>
 
-Josh Carpenter
+<div class="caption">Josh Carpenter</div>
 
---
+<div class="credit">[Paul Rivot](https://www.youtube.com/watch?v=pAC5SeNH8jw&feature=youtu.be)</div>
 
-### “The best way to reach the widest number of customers in VR will be via the web.”
+-- world-wide-web bg-fade
 
-<div class="caption">Brandon Jones, Google</div>
+## “The best way to reach the widest number of customers in VR will be via the web.”
+
+<div class="caption">Brandon Jones</div>
+
+<div class="credit">[frankieleon](https://www.flickr.com/photos/armydre2008/6012029995)</div>
 
 -- white
 
 ![WebVR](images/webvr-logo-square.png)
 
--- pwacman valign-bottom extra-vignette-1
-
-[samsunginter.net/pwacman](https://samsunginter.net/pwacman)
-
--- aframe-racer valign-bottom extra-vignette-1
-
-[samsunginter.net/a-frame-demos/racer/](https://samsunginter.net/a-frame-demos/racer/)
-
--- bubble valign-bottom extra-vignette-2
-
-[samsunginter.net/bubble/](https://samsunginter.net/bubble/)
-
--- bubble-hollywood valign-bottom extra-vignette-2
-
-[bit.ly/hollywood-bubble](http://bit.ly/hollywood-bubble)
-
--- word-drop valign-bottom extra-vignette-1
-
-[samsunginter.net/word-drop/](https://samsunginter.net/word-drop/)
-
--- metaverse-audience valign-bottom extra-vignette-2
+-- metaverse valign-bottom extra-vignette-2
 
 [metaverse.samsunginter.net](https://metaverse.samsunginter.net/)
-
--- within valign-bottom extra-vignette-2
-
-[vr.with.in](https://vr.with.in)
-
--- playcanvas-lab valign-bottom extra-vignette-1
-
-[webvr.playcanvas.com](https://webvr.playcanvas.com)
 
 --
 
@@ -90,20 +67,17 @@ Josh Carpenter
 * Sensor integration, e.g. orientation
 * Rendering for different hardware
 
-
 -- 
 
 ### Stereoscopic
 
 <img src="images/oculus-stereo-normal.jpg" alt="Stereoscopic" style="max-width:80%; max-height: 70vh"/>
 
-
 -- 
 
 ### Browser handles distortion
 
 <img src="images/oculus-stereo-distortion.jpg" alt="Distortion" style="max-width:80%; max-height: 70vh"/>
-
 
 -- browser-support
 
@@ -127,7 +101,7 @@ Josh Carpenter
 
 ## WebVR API
 
-#### Version "1.1" - [bit.ly/webvr-update-sep-2016](http://blog.tojicode.com/2016/09/update-on-webvr-spec-chrome-and-https.html)
+### Version "1.1" - [bit.ly/webvr-update-sep-2016](http://blog.tojicode.com/2016/09/update-on-webvr-spec-chrome-and-https.html)
 
 -- 
 
@@ -237,11 +211,7 @@ function animate() {
 animate();
 ```
 
-
--- iframe
-
-<iframe src="demos/threejs-spinning-cube/index.html" scrolling="no" width="100%" height="100%"></iframe>
-
+<p style="margin-top: 1em">[Here's one I made earlier](demos/threejs-spinning-cube/index.html)</p>
 
 -- 
 
@@ -386,8 +356,39 @@ new AFRAME.TWEEN.Tween(el.object3D.rotation)
 
 <iframe src="demos/aframe-flickr-carousel/index.html" scrolling="no" width="100%" height="100%"></iframe>
 
+--
 
--- pva fade-less
+## Examples
+
+-- aframe-racer valign-bottom extra-vignette-1
+
+[samsunginter.net/a-frame-demos/racer/](https://samsunginter.net/a-frame-demos/racer/)
+
+-- pwacman valign-bottom extra-vignette-1
+
+[samsunginter.net/pwacman](https://samsunginter.net/pwacman)
+
+-- bubble valign-bottom extra-vignette-2
+
+[samsunginter.net/bubble/](https://samsunginter.net/bubble/)
+
+-- bubble-hollywood valign-bottom extra-vignette-2
+
+[bit.ly/hollywood-bubble](http://bit.ly/hollywood-bubble)
+
+-- word-drop valign-bottom extra-vignette-1
+
+[samsunginter.net/word-drop/](https://samsunginter.net/word-drop/)
+
+-- within valign-bottom extra-vignette-2
+
+[vr.with.in](https://vr.with.in)
+
+-- playcanvas-lab valign-bottom extra-vignette-1
+
+[webvr.playcanvas.com](https://webvr.playcanvas.com)
+
+-- pva bg-fade fade-less
 
 # Progressive VR Apps
 
