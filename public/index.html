@@ -1157,16 +1157,22 @@ effect.render( scene, camera );</code></pre>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a-scene</span>&gt;</span></code></pre>
 </section>
   </div>
-  <div class="slide hidden  iframe" id="slide-33">
+  <div class="slide hidden" id="slide-33">
+    <section class="slide-content"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span> <span class="hljs-attr">position</span>=<span class="hljs-string">"0 0 3.8"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">a-camera</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-camera</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">a-entity</span>&gt;</span></code></pre>
+</section>
+  </div>
+  <div class="slide hidden  iframe" id="slide-34">
     <section class="slide-content"><iframe src="demos/aframe-basic/index.html" scrolling="no" width="100%" height="100%"></iframe>
 
 <h3 class="over-iframe"><a href="https://bit.ly/aframe-basic">bit.ly/aframe-basic</a></h3></section>
   </div>
-  <div class="slide hidden  llama-carousel valign-top" id="slide-34">
+  <div class="slide hidden  llama-carousel valign-top" id="slide-35">
     <section class="slide-content"><h3 id="let-s-make-a-flickr-carousel">Let&#39;s make a Flickr carousel</h3>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-35">
+  <div class="slide hidden  " id="slide-36">
     <section class="slide-content"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"aframe-layout-component.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 
 ...
@@ -1175,7 +1181,7 @@ effect.render( scene, camera );</code></pre>
           <span class="hljs-attr">layout</span>=<span class="hljs-string">"type: circle; radius: 3"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-entity</span>&gt;</span></code></pre>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-36">
+  <div class="slide hidden  " id="slide-37">
     <section class="slide-content"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"aframe-look-at-component.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">generateImage</span>(<span class="hljs-params">id, src</span>) </span>{
 
@@ -1190,13 +1196,13 @@ effect.render( scene, camera );</code></pre>
 }</code></pre>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-37">
+  <div class="slide hidden  " id="slide-38">
     <section class="slide-content"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-entity</span> <span class="hljs-attr">camera</span> <span class="hljs-attr">look-controls</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">a-cursor</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-cursor</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a-entity</span>&gt;</span></code></pre>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-38">
+  <div class="slide hidden  " id="slide-39">
     <section class="slide-content"><h3 id="pre-canned-animations">Pre-canned animations</h3>
 <pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-animation</span> <span class="hljs-attr">begin</span>=<span class="hljs-string">"click"</span> 
              <span class="hljs-attr">attribute</span>=<span class="hljs-string">"rotation"</span> 
@@ -1205,111 +1211,111 @@ effect.render( scene, camera );</code></pre>
              <span class="hljs-attr">fill</span>=<span class="hljs-string">"forwards"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a-animation</span>&gt;</span></code></pre>
 <p class="caption">Just place inside an element</p></section>
   </div>
-  <div class="slide hidden  " id="slide-39">
+  <div class="slide hidden  " id="slide-40">
     <section class="slide-content"><h3 id="or-take-control-with-tween-js">Or take control with Tween.js</h3>
 <pre><code class="lang-javascript"><span class="hljs-keyword">new</span> AFRAME.TWEEN.Tween(el.object3D.rotation)
      .to({y: targetRotation}, <span class="hljs-number">1000</span>) <span class="hljs-comment">// 1 second</span>
      .start();</code></pre>
 </section>
   </div>
-  <div class="slide hidden  sky-gawthrop" id="slide-40">
+  <div class="slide hidden  sky-gawthrop" id="slide-41">
     <section class="slide-content"><pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a-assets</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"assets"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"mountainSky"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"images/sky_by_gawthrop.jpg"</span>/&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">a-assets</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">a-sky</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"#mountainSky"</span>/&gt;</span></code></pre>
 </section>
   </div>
-  <div class="slide hidden  iframe" id="slide-41">
+  <div class="slide hidden  iframe" id="slide-42">
     <section class="slide-content"><iframe src="demos/aframe-flickr-carousel/index.html" scrolling="no" width="100%" height="100%"></iframe>
 
 <h3 class="over-iframe"><a href="https://bit.ly/aframe-carousel">bit.ly/aframe-carousel</a></h3></section>
   </div>
-  <div class="slide hidden  example-with-caption" id="slide-42">
+  <div class="slide hidden  example-with-caption" id="slide-43">
     <section class="slide-content"><h3 id="-samsunginter-net-a-frame-tutorial-https-samsunginter-net-a-frame-tutorial-"><a href="https://samsunginter.net/a-frame-tutorial/">samsunginter.net/a-frame-tutorial/</a></h3>
 <p><img style="max-height: calc(100vh - 10em)" src="images/aframe-tutorial.png" alt="A-Frame tutorial"/></p>
 <div class="caption">By <a href="https://twitter.com/Lady_Ada_King">Ada Rose Edwards</a></div></section>
   </div>
-  <div class="slide hidden" id="slide-43">
+  <div class="slide hidden" id="slide-44">
     <section class="slide-content"><h1 id="more-examples-">More Examples!</h1>
 </section>
   </div>
-  <div class="slide hidden  aframe-racer valign-bottom extra-vignette-1 example-with-caption" id="slide-44">
+  <div class="slide hidden  aframe-racer valign-bottom extra-vignette-1 example-with-caption" id="slide-45">
     <section class="slide-content"><p><a href="https://samsunginter.net/a-frame-demos/racer/">samsunginter.net/a-frame-demos/racer/</a></p>
 <div class="caption">By <a href="https://twitter.com/Lady_Ada_King">Ada Rose Edwards</a></div></section>
   </div>
-  <div class="slide hidden  pwacman valign-bottom extra-vignette-1 example-with-caption" id="slide-45">
+  <div class="slide hidden  pwacman valign-bottom extra-vignette-1 example-with-caption" id="slide-46">
     <section class="slide-content"><p><a href="https://samsunginter.net/pwacman">samsunginter.net/pwacman</a></p>
 <div class="caption">By <a href="https://twitter.com/diekus">Diego Gonzalez</a></div></section>
   </div>
-  <div class="slide hidden  bubble valign-bottom extra-vignette-2 example-with-caption" id="slide-46">
+  <div class="slide hidden  bubble valign-bottom extra-vignette-2 example-with-caption" id="slide-47">
     <section class="slide-content"><p><a href="https://samsunginter.net/bubble/">samsunginter.net/bubble/</a></p>
 <div class="caption">By <a href="https://twitter.com/diekus">Diego Gonzalez</a></div></section>
   </div>
-  <div class="slide hidden  bubble-hollywood valign-bottom extra-vignette-2" id="slide-47">
+  <div class="slide hidden  bubble-hollywood valign-bottom extra-vignette-2" id="slide-48">
     <section class="slide-content"><p><a href="http://bit.ly/hollywood-bubble">bit.ly/hollywood-bubble</a></p>
 </section>
   </div>
-  <div class="slide hidden  word-drop valign-bottom extra-vignette-1 example-with-caption" id="slide-48">
+  <div class="slide hidden  word-drop valign-bottom extra-vignette-1 example-with-caption" id="slide-49">
     <section class="slide-content"><p><a href="https://samsunginter.net/word-drop/">samsunginter.net/word-drop/</a></p>
 <div class="caption">By <a href="https://twitter.com/diekus">Diego Gonzalez</a></div></section>
   </div>
-  <div class="slide hidden  within valign-bottom extra-vignette-2 example-with-caption" id="slide-49">
+  <div class="slide hidden  within valign-bottom extra-vignette-2 example-with-caption" id="slide-50">
     <section class="slide-content"><p><a href="https://vr.with.in">vr.with.in</a></p>
 </section>
   </div>
-  <div class="slide hidden  playcanvas-lab valign-bottom extra-vignette-1" id="slide-50">
+  <div class="slide hidden  playcanvas-lab valign-bottom extra-vignette-1" id="slide-51">
     <section class="slide-content"><p><a href="https://webvr.playcanvas.com">webvr.playcanvas.com</a></p>
 </section>
   </div>
-  <div class="slide hidden  renault valign-bottom extra-vignette-1" id="slide-51">
+  <div class="slide hidden  renault valign-bottom extra-vignette-1" id="slide-52">
     <section class="slide-content"><p><a href="https://kadjar-vr.littleworkshop.fr/">kadjar-vr.littleworkshop.fr</a></p>
 </section>
   </div>
-  <div class="slide hidden  pva bg-fade fade-less" id="slide-52">
+  <div class="slide hidden  pva bg-fade fade-less" id="slide-53">
     <section class="slide-content"><h1 id="progressive-vr-apps">Progressive VR Apps</h1>
 <div class="credit"><a href="https://commons.wikimedia.org/wiki/File:Pva_wood_glue.jpg">Victuallers</a></div></section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-53">
+  <div class="slide hidden  img-with-header" id="slide-54">
     <section class="slide-content"><h3 id="-continuous-browsing-experiences-">&quot;Continuous browsing experiences&quot;</h3>
 <p><img src="images/continuous-browsing-experience.png" alt="Continuous browsing experiences"></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-54">
+  <div class="slide hidden  img-with-header" id="slide-55">
     <section class="slide-content"><h3 id="responsive-design">Responsive Design</h3>
 <p><img src="images/responsive-design.png" alt="Responsive design"></p>
 <p><em>Assume small screen.</em></p>
 <p><em>If &gt; x pixels, apply desktop styles.</em></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-55">
+  <div class="slide hidden  img-with-header" id="slide-56">
     <section class="slide-content"><h3 id="responsive-experience">Responsive Experience</h3>
 <p><img src="images/responsive-experiences.png" alt="Responsive experiences"></p>
 <p><em>Assume no VR headset.</em></p>
 <p><em>If WebVR/polyfill &amp; user taps button, start VR experience.</em></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-header" id="slide-56">
+  <div class="slide hidden  img-with-header" id="slide-57">
     <section class="slide-content"><h3 id="responsive-fidelity">Responsive Fidelity</h3>
 <p><img src="images/responsive-fidelity.png" alt="Responsive fidelity"></p>
 <p><em>Assume low-powered.</em> </p>
 <p><em>If smooth frame rate, download higher-res assets.</em></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-caption" id="slide-57">
+  <div class="slide hidden  img-with-caption" id="slide-58">
     <section class="slide-content"><p><img src="images/playcanvas-man-o-war.jpg" alt="PlayCanvas Man-O-War"></p>
 <p><a href="http://bit.ly/playcanvas-gun-project">bit.ly/playcanvas-gun-project</a></p>
 </section>
   </div>
-  <div class="slide hidden  img-with-caption gamepad-support" id="slide-58">
+  <div class="slide hidden  img-with-caption gamepad-support" id="slide-59">
     <section class="slide-content"><p><img src="images/gamepad-support.png" alt="Gamepad API support"></p>
 <p><a href="bit.ly/beta-gamepad-support">bit.ly/beta-gamepad-support</a></p>
 </section>
   </div>
-  <div class="slide hidden  controller valign-bottom" id="slide-59">
+  <div class="slide hidden  controller valign-bottom" id="slide-60">
     <section class="slide-content"><p><a href="http://www.samsung.com/global/galaxy/gear-vr/#controller">samsung.com/global/galaxy/gear-vr/#controller</a></p>
 </section>
   </div>
-  <div class="slide hidden  " id="slide-60">
+  <div class="slide hidden  " id="slide-61">
     <section class="slide-content"><h2 id="where-next-">Where next?</h2>
 <ul>
 <li>Physics / gaming engines?</li>
@@ -1318,20 +1324,20 @@ effect.render( scene, camera );</code></pre>
 </ul>
 </section>
   </div>
-  <div class="slide hidden  valign-top another-world" id="slide-61">
+  <div class="slide hidden  valign-top another-world" id="slide-62">
     <section class="slide-content"><h2 id="from-web-sites-to-web-worlds-">From web sites to web <em>worlds</em></h2>
 </section>
   </div>
-  <div class="slide hidden  earth-rising valign-top" id="slide-62">
+  <div class="slide hidden  earth-rising valign-top" id="slide-63">
     <section class="slide-content"><h3 id="what-will-you-create-">What will you create?</h3>
 </section>
   </div>
-  <div class="slide hidden  vrtogether valign-top" id="slide-63">
+  <div class="slide hidden  vrtogether valign-top" id="slide-64">
     <section class="slide-content"><h2 id="join-our-virtual-vr-hackathon-">Join our Virtual VR Hackathon!</h2>
 <h3 id="-bit-ly-vr-hackathon-2017-https-bit-ly-vr-hackathon-2017-"><a href="https://bit.ly/vr-hackathon-2017">bit.ly/vr-hackathon-2017</a></h3>
 </section>
   </div>
-  <div class="slide hidden  bg-fade-less-grey thanks valign-bottom" id="slide-64">
+  <div class="slide hidden  bg-fade-less-grey thanks valign-bottom" id="slide-65">
     <section class="slide-content"><h1 id="thanks-">Thanks!</h1>
 <div class="social">
   <h3 class="twitter"><a href="https://twitter.com/poshaughnessy">@poshaughnessy</a></h3>

@@ -282,6 +282,13 @@ effect.render( scene, camera );
 </a-scene>
 ```
 
+--
+
+```html
+<a-entity position="0 0 3.8">
+  <a-camera></a-camera>
+</a-entity>
+```
 
 -- iframe
 
